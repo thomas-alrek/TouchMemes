@@ -6,7 +6,6 @@ class TouchBarController: NSObject, NSTouchBarDelegate {
     static let shared = TouchBarController()
     
     let pasteboard = NSPasteboard.general
-    let queue = DispatchQueue.global(qos: .background)
     var debounce = -2
     
     let touchBar = NSTouchBar()
@@ -26,10 +25,6 @@ class TouchBarController: NSObject, NSTouchBarDelegate {
         DFRElementSetControlStripPresenceForIdentifier(.systemTrayItem, true)
     }
     
-    func updateControlStripPresence() {
-        DFRElementSetControlStripPresenceForIdentifier(.systemTrayItem, true)
-    }
-    
     @objc private func presentTouchBar() {
         NSTouchBar.presentSystemModalFunctionBar(touchBar, systemTrayItemIdentifier: .systemTrayItem)
     }
@@ -43,16 +38,13 @@ class TouchBarController: NSObject, NSTouchBarDelegate {
         if (debounce == 0) {
             pasteboard.setString(text, forType: NSPasteboard.PasteboardType.string)
             DCPostCommandAndKey(KEY_CODE_V)
-            usleep(10000)
         }
         debounce += 1
     }
     
-    // MARK: - NSTouchBarDelegate
-    
     func touchBar(_ touchBar: NSTouchBar, makeItemForIdentifier identifier: NSTouchBarItem.Identifier) -> NSTouchBarItem? {
         dismissTouchBar()
-        paste(withText: "¯\\_(ツ)_/¯")
+        paste(withText: Constants.shrug)
         return nil
     }
     
