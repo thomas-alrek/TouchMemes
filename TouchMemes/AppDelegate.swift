@@ -38,6 +38,8 @@ class AppDelegate: NSObject, NSApplicationDelegate
             button.image = NSImage(named: NSImage.Name(rawValue: "MenuBarIcon"))
             button.action = #selector(togglePopover)
         }
+        
+        popover.behavior = .transient
         popover.contentViewController = PreferencesViewController.freshController()
         popover.appearance = NSAppearance(named: .aqua)
     }
@@ -51,6 +53,7 @@ class AppDelegate: NSObject, NSApplicationDelegate
     }
     
     func showPopover(sender: Any?) {
+        NSApplication.shared.activate(ignoringOtherApps: true)
         if let button = statusItem.button {
             popover.show(relativeTo: button.bounds, of: button, preferredEdge: NSRectEdge.minY)
         }
