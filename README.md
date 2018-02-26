@@ -8,5 +8,6 @@ This app adds a control strip button for inserting your favourite dank memes
 
 This application uses a private API to insert a global control strip button. You can also modify the shortcuts though the menubar.
 
+[Download latest release](https://github.com/thomas-alrek/TouchMemes/releases/latest)
 
 Copyright &copy; Thomas Alrek
