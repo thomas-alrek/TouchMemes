@@ -1,0 +1,45 @@
+
+/* Class = "NSMenuItem"; title = "TouchMemes"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "TouchMemes";
+
+/* Class = "NSMenuItem"; title = "Quit TouchMemes"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "Quit TouchMemes";
+
+/* Class = "NSMenuItem"; title = "About TouchMemes"; ObjectID = "5kV-Vb-QxS"; */
+"5kV-Vb-QxS.title" = "About TouchMemes";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "Main Menu";
+
+/* Class = "NSMenuItem"; title = "Preferences…"; ObjectID = "BOF-NM-1cW"; */
+"BOF-NM-1cW.title" = "Preferences…";
+
+/* Class = "NSWindow"; title = "Preferences"; ObjectID = "IQv-IB-iLA"; */
+"IQv-IB-iLA.title" = "Preferences";
+
+/* Class = "NSMenuItem"; title = "Show All"; ObjectID = "Kd2-mp-pUS"; */
+"Kd2-mp-pUS.title" = "Show All";
+
+/* Class = "NSMenuItem"; title = "Services"; ObjectID = "NMo-om-nkz"; */
+"NMo-om-nkz.title" = "Services";
+
+/* Class = "NSMenuItem"; title = "Hide TouchMemes"; ObjectID = "Olw-nP-bQN"; */
+"Olw-nP-bQN.title" = "Hide TouchMemes";
+
+/* Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "Vdr-fp-XzO"; */
+"Vdr-fp-XzO.title" = "Hide Others";
+
+/* Class = "NSTextFieldCell"; title = "Preferece"; ObjectID = "XjC-4i-ZvF"; */
+"XjC-4i-ZvF.title" = "Preferece";
+
+/* Class = "NSSegmentedCell"; cRI-rW-Vjd.ibShadowedLabels[2] = "▲"; ObjectID = "cRI-rW-Vjd"; */
+"cRI-rW-Vjd.ibShadowedLabels[2]" = "▲";
+
+/* Class = "NSSegmentedCell"; cRI-rW-Vjd.ibShadowedLabels[3] = "▼"; ObjectID = "cRI-rW-Vjd"; */
+"cRI-rW-Vjd.ibShadowedLabels[3]" = "▼";
+
+/* Class = "NSMenu"; title = "Services"; ObjectID = "hz9-B4-Xy5"; */
+"hz9-B4-Xy5.title" = "Services";
+
+/* Class = "NSMenu"; title = "TouchMemes"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "TouchMemes";

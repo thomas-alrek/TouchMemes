@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  TouchMemes
+
+  Created by Thomas Alrek on 26/02/2018.
+  Copyright © 2018 Thomas Alrek. All rights reserved.
+*/
+
+"Add" = "Add";
+"Cancel" = "Cancel";
+"Add new text" = "Add new text";
