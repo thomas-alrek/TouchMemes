@@ -17,7 +17,7 @@ class AppDelegate: NSObject, NSApplicationDelegate
     var storyBoard : NSStoryboard?
     var preferencesWindowController : NSWindowController?
     
-    let popover = NSPopover()
+    static let popover = NSPopover()
     let statusItem = NSStatusBar.system.statusItem(withLength:NSStatusItem.squareLength)
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
@@ -39,13 +39,13 @@ class AppDelegate: NSObject, NSApplicationDelegate
             button.action = #selector(togglePopover)
         }
         
-        popover.behavior = .transient
-        popover.contentViewController = PreferencesViewController.freshController()
-        popover.appearance = NSAppearance(named: .aqua)
+        AppDelegate.popover.behavior = .transient
+        AppDelegate.popover.contentViewController = PreferencesViewController.freshController()
+        AppDelegate.popover.appearance = NSAppearance(named: .aqua)
     }
     
     @objc func togglePopover(_ sender: Any?) {
-        if popover.isShown {
+        if AppDelegate.popover.isShown {
             closePopover(sender: sender)
         } else {
             showPopover(sender: sender)
@@ -55,12 +55,12 @@ class AppDelegate: NSObject, NSApplicationDelegate
     func showPopover(sender: Any?) {
         NSApplication.shared.activate(ignoringOtherApps: true)
         if let button = statusItem.button {
-            popover.show(relativeTo: button.bounds, of: button, preferredEdge: NSRectEdge.minY)
+            AppDelegate.popover.show(relativeTo: button.bounds, of: button, preferredEdge: NSRectEdge.minY)
         }
     }
     
     func closePopover(sender: Any?) {
-        popover.performClose(sender)
+        AppDelegate.popover.performClose(sender)
     }
     
     func loadUserPrefs () -> [String] {

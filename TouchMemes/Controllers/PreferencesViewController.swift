@@ -85,6 +85,7 @@ class PreferencesViewController: NSViewController {
     
     @IBAction func addRow (sender: AnyObject) {
         let prompt = NSAlert()
+        AppDelegate.popover.behavior = .applicationDefined
         let input = SheetTextField.init(frame: NSMakeRect(0,0,300,28))
         let inputView = NSScrollView.init(frame: NSMakeRect(0,0,300,28))
         inputView.hasVerticalScroller = true
@@ -103,6 +104,7 @@ class PreferencesViewController: NSViewController {
                 self.tableView.reloadData()
                 AppDelegate.saveUserPrefs()
             }
+            AppDelegate.popover.behavior = .transient
         }
     }
     
