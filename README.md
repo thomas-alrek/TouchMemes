@@ -10,4 +10,10 @@ This application uses a private API to insert a global control strip button. You
 
 [Download latest release](https://github.com/thomas-alrek/TouchMemes/releases/latest)
 
+If you like this app and would like to support future development, you can help me out by donating Litecoin or Bitcoin.
+
+Litecoin address: LYk38E8zPHatAHWpiFVpz9nq8FNcTwvZxz
+
+Bitcoin address: 1PZLAFFjoTdHEDCtStmdXwysURz6ZfTFpJ
+
 Copyright &copy; Thomas Alrek
