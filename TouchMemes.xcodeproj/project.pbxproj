@@ -366,6 +366,7 @@
 				);
 				INFOPLIST_FILE = TouchMemes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = no.alrek.TouchMemes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = TouchMemes/Helpers/BridgingHeader.h;
@@ -387,6 +388,7 @@
 				);
 				INFOPLIST_FILE = TouchMemes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = no.alrek.TouchMemes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = TouchMemes/Helpers/BridgingHeader.h;

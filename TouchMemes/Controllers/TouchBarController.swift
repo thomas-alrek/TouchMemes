@@ -36,7 +36,7 @@ class TouchBarController: NSObject, NSTouchBarDelegate {
     }
     
     @objc private func presentTouchBar() {
-        NSTouchBar.presentSystemModalFunctionBar(touchBar, systemTrayItemIdentifier: .systemTrayItem)
+        NSTouchBar.presentSystemModalTouchBar(touchBar, systemTrayItemIdentifier: .systemTrayItem)
         isPresented = true
     }
     
